@@ -1,0 +1,69 @@
+#!/usr/bin/env node
+
+/* eslint no-console: ["error", { allow: ["warn", "error"] }] no-process-exit: 0 */
+
+const scramjet = require('scramjet');
+const path = require('path');
+
+const options = require('../lib/readopts')(process.argv.slice(2), {
+    i: "-",
+    o: "-",
+    h: false,
+    get d() {
+        return this.o === '@';
+    },
+    set d(value) {
+        this.o = '@';
+    },
+    t: "StringStream",
+    p: [],
+    "@": []
+});
+
+if (options.h || !options["@"].length) {
+    require('../lib/showhelp')(options);
+    process.exit(1);
+}
+
+for (const plugin of options.p)
+    scramjet.plugin(require(plugin));
+
+let stream = null;
+
+(async () => {
+    try {
+        if (options.i.match(/https?:\/\//)) {
+            stream = require("util").promisify(require("http").get(options.i));
+        } else if (options.i === '-') {
+            stream = process.stdin;
+        } else {
+            stream = require("fs").createReadStream(options.i);
+        }
+
+        stream = stream.pipe(
+            new scramjet[options.t]()
+        );
+
+        for (let module of options["@"]) {
+            if ("./".indexOf(module[0]) > -1)
+                module = path.resolve(process.cwd(), module);
+
+            stream = await (require(module)(stream));
+        }
+
+        let out;
+        if (options.o === '-') {
+            out = process.stdout;
+        } else if (options.o === '@') {
+            return console.log(stream);
+        } else {
+            out = require("fs").createReadStream(options.o);
+        }
+
+        stream.pipe(out);
+    } catch (e) {
+        console.error(e && e.stack);
+        console.error("\nAn error occured, terminating...");
+        process.exit(10);
+    }
+})();

@@ -1,0 +1,25 @@
+{
+  "name": "scramjet-cli",
+  "version": "0.0.0",
+  "description": "Command line interface into running scramjet modules",
+  "main": "index.js",
+  "bin": {
+    "sjr": "bin/scramjet-run"
+  },
+  "scripts": {
+    "test": "bash test/test.sh"
+  },
+  "homepage": "https://michalcz.github.io/scramjet/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/signicode/scramjet-fini.git"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "author": "Signicode / Michał Czapracki <cz@signicode.com>",
+  "license": "MIT",
+  "dependencies": {
+    "scramjet": ">=4"
+  }
+}
