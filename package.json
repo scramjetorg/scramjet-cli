@@ -12,10 +12,10 @@
   "homepage": "https://scramjet.eu/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/signicode/scramjet-fini.git"
+    "url": "https://github.com/signicode/scramjet-cli.git"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=8"
   },
   "author": "Signicode / Michał Czapracki <cz@signicode.com>",
   "license": "MIT",
