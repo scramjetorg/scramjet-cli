@@ -1,5 +1,13 @@
 # scramjet-cli
 
+Install globally...
+
+    npm install scramjet-cli
+
+... and use:
+
+    $ cat file.log | scr ./my-module > augmented.log
+
 Allows to run [scramjet](https://www.npmjs.com/package/scramjet) modules from command line facilitating input and output.
 
      Usage: sjr [-i input] [-o output|-d] [-t StreamClass] [-p plg [-p plg]...] mod1 [mod2] ...
