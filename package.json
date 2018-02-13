@@ -9,7 +9,7 @@
   "scripts": {
     "test": "bash test/test.sh"
   },
-  "homepage": "https://michalcz.github.io/scramjet/",
+  "homepage": "https://scramjet.eu/",
   "repository": {
     "type": "git",
     "url": "https://github.com/signicode/scramjet-fini.git"
