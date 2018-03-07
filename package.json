@@ -7,7 +7,10 @@
     "sjr": "bin/scramjet-run"
   },
   "scripts": {
-    "test": "bash test/test.sh"
+    "lint": "eslint bin/ lib/ && echo Lint passed!",
+    "bash-test": "bash test/test.sh",
+    "test": "npm run lint && npm run bash-test",
+    "preversion": "npm test"
   },
   "homepage": "https://scramjet.eu/",
   "repository": {
