@@ -7,7 +7,10 @@
     "sjr": "bin/scramjet-run"
   },
   "scripts": {
-    "test": "bash test/test.sh"
+    "lint": "eslint bin/ lib/ && echo Lint passed!",
+    "bash-test": "bash test/test.sh",
+    "test": "npm run lint && npm run bash-test",
+    "preversion": "npm test"
   },
   "homepage": "https://scramjet.eu/",
   "repository": {
@@ -21,5 +24,10 @@
   "license": "MIT",
   "dependencies": {
     "scramjet": ">=4"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "eslint-config-defaults": "^9.0.0",
+    "eslint-plugin-node": "^6.0.1"
   }
 }

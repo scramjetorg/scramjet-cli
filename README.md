@@ -4,7 +4,7 @@ Allows to run [scramjet](https://www.npmjs.com/package/scramjet) modules from co
 
 Install globally...
 
-    npm install scramjet-cli
+    npm install -g scramjet-cli
 
 ... and use:
 
