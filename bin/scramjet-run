@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-/* eslint no-console: ["error", { allow: ["warn", "error"] }] no-process-exit: 0 */
+/* eslint no-console: 0 no-process-exit: 0 */
 
 const scramjet = require('scramjet');
 const path = require('path');
