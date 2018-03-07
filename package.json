@@ -1,6 +1,6 @@
 {
   "name": "scramjet-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Command line interface into running scramjet modules",
   "main": "index.js",
   "bin": {
