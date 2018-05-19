@@ -28,7 +28,7 @@ A module that fetches response body from each given url would look like this:
 
 Full usage:
 
-     Usage: sjr [-i input] [-o output|-d] [-t StreamClass] [-p plg [-p plg]...] mod1 [mod2] ...
+     Usage: scramjet [-i input] [-o output|-d] [-t StreamClass] [-p plg [-p plg]...] mod1 [mod2] ...
      Options:
      -i --input   input - url to get, file path, empty or '-' for stdin, default: -
      -o --output  output - file path, '@' for print, empty or '-' for stdout, default: -
