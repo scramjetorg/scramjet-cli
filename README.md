@@ -1,5 +1,7 @@
 # scramjet-cli
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/signicode/scramjet-cli.svg)](https://greenkeeper.io/)
+
 Allows to run [scramjet](https://www.npmjs.com/package/scramjet) modules from command line facilitating input and output.
 
 Install globally...
