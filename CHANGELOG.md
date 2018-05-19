@@ -1,4 +1,8 @@
-# Scramjet CLI 1.3.1
+# Scramjet CLI 1.3.2
+
+* Dependencies update
+
+## Scramjet CLI 1.3.1
 
 * Dependencies update
 

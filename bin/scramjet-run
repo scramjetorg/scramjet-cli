@@ -40,9 +40,7 @@ let stream = null;
             stream = require("fs").createReadStream(options.i);
         }
 
-        stream = stream.pipe(
-            new scramjet[options.t]()
-        );
+        stream = scramjet[options.t].from(stream);
 
         for (let module of options["@"]) {
             if ("./".indexOf(module[0]) > -1)
@@ -63,7 +61,7 @@ let stream = null;
         stream.pipe(out);
     } catch (e) {
         console.error(e && e.stack);
-        console.error("\nAn error occured, terminating...");
+        console.error("\nAn error occurred, terminating...");
         process.exit(10);
     }
 })();
