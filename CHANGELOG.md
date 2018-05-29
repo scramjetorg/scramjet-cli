@@ -1,8 +1,4 @@
-# Scramjet CLI 1.3.2
-
-* Dependencies update
-
-## Scramjet CLI 1.3.1
+# Scramjet CLI 1.3.3
 
 * Dependencies update
 
@@ -21,13 +17,7 @@
 ## Scramjet CLI 1.0.3
 
 * Dependencies update
-
-## Scramjet CLI 1.0.2
-
 * Add tests to package.json
 * Added linter
 * Correction in readme
-
-## Scramjet CLI 1.0.1
-
 * Fix permissions
