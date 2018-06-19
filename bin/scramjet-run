@@ -55,7 +55,7 @@ let stream = null;
         } else if (options.o === '@') {
             return console.log(stream);
         } else {
-            out = require("fs").createReadStream(options.o);
+            out = require("fs").createWriteStream(options.o);
         }
 
         stream.pipe(out);
