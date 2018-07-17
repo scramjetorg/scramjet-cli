@@ -8,7 +8,7 @@
     "scramjet": "bin/scramjet-run"
   },
   "scripts": {
-    "lint": "eslint bin/ lib/ && echo Lint passed!",
+    "lint": "eslint bin/* lib/ && echo Lint passed!",
     "bash-test": "bash test/test.sh",
     "test": "npm run lint && npm run bash-test",
     "preversion": "npm test"
@@ -27,7 +27,7 @@
     "scramjet": "^4.17.0"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
+    "eslint": "^5.1.0",
     "eslint-config-defaults": "^9.0.0",
     "eslint-plugin-node": "^6.0.1"
   }
