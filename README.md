@@ -1,6 +1,7 @@
 # scramjet-cli
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/signicode/scramjet-cli.svg)](https://greenkeeper.io/)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsignicode%2Fscramjet-cli.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsignicode%2Fscramjet-cli?ref=badge_shield)
 
 Allows to run [scramjet](https://www.npmjs.com/package/scramjet) modules from command line facilitating input and output.
 
@@ -42,3 +43,6 @@ Full usage:
 # License
 
 MIT - [see LICENSE](./LICENSE)
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsignicode%2Fscramjet-cli.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsignicode%2Fscramjet-cli?ref=badge_large)
