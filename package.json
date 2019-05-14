@@ -24,11 +24,11 @@
   "author": "Signicode / Michał Czapracki <cz@signicode.com>",
   "license": "MIT",
   "dependencies": {
-    "scramjet": "^4.23.2"
+    "scramjet": "^4.24.1"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-defaults": "^9.0.0",
-    "eslint-plugin-node": "^9.0.0"
+    "eslint-plugin-node": "^9.0.1"
   }
 }
