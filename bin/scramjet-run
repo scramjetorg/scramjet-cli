@@ -45,7 +45,8 @@ let stream = null;
         for (let module of options["@"]) {
             if ("./".indexOf(module[0]) > -1)
                 module = path.resolve(process.cwd(), module);
-
+            
+            // eslint-disable-next-line require-atomic-updates
             stream = await (require(module)(stream));
         }
 
