@@ -24,7 +24,7 @@
   "author": "Signicode / Michał Czapracki <cz@signicode.com>",
   "license": "MIT",
   "dependencies": {
-    "scramjet": "^4.33.0"
+    "scramjet": "^4.33.4"
   },
   "devDependencies": {
     "eslint": "^7.3.1",
