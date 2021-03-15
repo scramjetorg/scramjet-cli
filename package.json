@@ -13,21 +13,21 @@
     "test": "npm run lint && npm run bash-test",
     "preversion": "npm test"
   },
-  "homepage": "https://scramjet.eu/",
+  "homepage": "https://scramjet.org/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/signicode/scramjet-cli.git"
+    "url": "https://github.com/scramjetorg/scramjet-cli.git"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   },
-  "author": "Signicode / Michał Czapracki <cz@signicode.com>",
+  "author": "Scramjet <open-source@scramjet.org>",
   "license": "MIT",
   "dependencies": {
-    "scramjet": "^4.35.12"
+    "scramjet": "^4.35.13"
   },
   "devDependencies": {
-    "eslint": "^7.19.0",
+    "eslint": "^7.22.0",
     "eslint-config-defaults": "^9.0.0",
     "eslint-plugin-node": "^11.1.0"
   }
