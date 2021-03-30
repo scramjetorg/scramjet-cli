@@ -24,7 +24,7 @@
   "author": "Scramjet <open-source@scramjet.org>",
   "license": "MIT",
   "dependencies": {
-    "scramjet": "^4.35.14"
+    "scramjet": "^4.35.15"
   },
   "devDependencies": {
     "eslint": "^7.23.0",
