@@ -24,10 +24,10 @@
   "author": "Scramjet <open-source@scramjet.org>",
   "license": "MIT",
   "dependencies": {
-    "scramjet": "^4.36.1"
+    "scramjet": "^4.36.8"
   },
   "devDependencies": {
-    "eslint": "^8.4.1",
+    "eslint": "^8.22.0",
     "eslint-config-defaults": "^9.0.0",
     "eslint-plugin-node": "^11.1.0"
   }
